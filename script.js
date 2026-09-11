@@ -8,3 +8,5 @@ function getComputerChoice(){
     } else return "Scissors"
 }
 
+let humanScore = 0;
+let computerScore = 0;
