@@ -6,7 +6,11 @@ function getComputerChoice(){
     }else if (angka >= 0.333 && angka < 0.666){
         return "Paper";
     } else return "Scissors"
-}
+};
 
 let humanScore = 0;
 let computerScore = 0;
+
+function playRound(humanScore, computerScore){
+
+};
