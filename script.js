@@ -35,5 +35,7 @@ function playRound(humanChoice, computerChoice){
  }
 };
 
-let humanSelection = getHumanChoice;
-let computerSelection = getComputerChoice;
+let humanSelection = getHumanChoice();
+let computerSelection = getComputerChoice();
+
+playRound(humanSelection, computerSelection);
