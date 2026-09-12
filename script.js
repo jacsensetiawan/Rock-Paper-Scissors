@@ -2,10 +2,15 @@ function getComputerChoice(){
     let angka = Math.random();
 
     if (angka >= 0 && angka < 0.333){
-        return "Rock";
+        return "rock";
     }else if (angka >= 0.333 && angka < 0.666){
-        return "Paper";
-    } else return "Scissors"
+        return "paper";
+    } else return "scissors"
+};
+
+function getHumanChoice(){
+    let choice = prompt("Enter your choice among rock, paper, scissors");
+    return choice;
 };
 
 let humanScore = 0;
