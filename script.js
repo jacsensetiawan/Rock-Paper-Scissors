@@ -34,3 +34,6 @@ function playRound(humanChoice, computerChoice){
     computerScore += 1;
  }
 };
+
+let humanSelection = getHumanChoice;
+let computerSelection = getComputerChoice;
