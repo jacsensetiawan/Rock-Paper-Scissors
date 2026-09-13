@@ -27,7 +27,7 @@ function playRound(humanChoice, computerChoice){
  } else if (humanChoice === "paper" && computerChoice === "rock"){
     console.log ("You Win! Paper beats Rock");
     humanScore += 1;
- } else if (humanChoice === "rock" && computerChoice === "scissors"){
+ } else if (humanChoice === "scissors" && computerChoice === "paper"){
     console.log ("You Win! Scissors beats Paper");
     humanScore += 1;
  } else {console.log (`You Lose! ${computerChoice} beats ${humanChoice}`);
@@ -35,7 +35,32 @@ function playRound(humanChoice, computerChoice){
  }
 };
 
-let humanSelection = getHumanChoice();
-let computerSelection = getComputerChoice();
+function playGame(){
+    let humanScore = 0;
+    let computerScore = 0;
 
-playRound(humanSelection, computerSelection);
+    function playRound(humanChoice, computerChoice){
+ humanChoice=humanChoice.toLowerCase();
+
+ if (humanChoice === computerChoice){
+    console.log ("You Draw! Both chose the same option");
+ } else if (humanChoice === "rock" && computerChoice === "scissors"){
+    console.log ("You Win! Rock beats Scissors");
+    humanScore += 1;
+ } else if (humanChoice === "paper" && computerChoice === "rock"){
+    console.log ("You Win! Paper beats Rock");
+    humanScore += 1;
+ } else if (humanChoice === "scissors" && computerChoice === "paper"){
+    console.log ("You Win! Scissors beats Paper");
+    humanScore += 1;
+ } else {console.log (`You Lose! ${computerChoice} beats ${humanChoice}`);
+    computerScore += 1;
+ }
+};
+
+playRound(getHumanChoice(), getComputerChoice());
+playRound(getHumanChoice(), getComputerChoice());
+playRound(getHumanChoice(), getComputerChoice());
+playRound(getHumanChoice(), getComputerChoice());
+playRound(getHumanChoice(), getComputerChoice());
+};
