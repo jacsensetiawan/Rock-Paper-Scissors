@@ -8,11 +8,6 @@ function getComputerChoice(){
     } else return "scissors"
 };
 
-function getHumanChoice(){
-    let choice = prompt("Enter your choice among rock, paper, scissors");
-    return choice;
-};
-
 let humanScore = 0;
 let computerScore = 0;
 
