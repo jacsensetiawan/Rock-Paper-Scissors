@@ -11,9 +11,6 @@ function getComputerChoice(){
 let humanScore = 0;
 let computerScore = 0;
 
-
-function playGame(){
-
     function playRound(humanChoice, computerChoice){
  humanChoice=humanChoice.toLowerCase();
 
@@ -31,6 +28,4 @@ function playGame(){
  } else {console.log (`You Lose! ${computerChoice} beats ${humanChoice}`);
     computerScore += 1;
  }
-};
-
 };
