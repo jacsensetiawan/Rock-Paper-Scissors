@@ -18,6 +18,7 @@ let computerScore = 0;
 
 
 function playGame(){
+
     function playRound(humanChoice, computerChoice){
  humanChoice=humanChoice.toLowerCase();
 
