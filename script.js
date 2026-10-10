@@ -29,3 +29,10 @@ let computerScore = 0;
     computerScore += 1;
  }
 };
+
+const container = document.querySelector("#container");
+container.addEventListener("click", (e) => {
+const humanChoice = e.target.id;
+const computerChoice = getComputerChoice();
+playRound(humanChoice, computerChoice);
+});
