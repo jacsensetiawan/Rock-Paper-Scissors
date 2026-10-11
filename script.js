@@ -29,6 +29,12 @@ let computerScore = 0;
     computerScore += 1;
  }
  document.querySelector("#score").textContent = `Human Score : ${humanScore} VS Computer Score : ${computerScore}`
+ 
+ if(humanScore === 5) {
+   document.querySelector("#result").textContent = "You Win!"
+ } else if (computerScore === 5) {
+   document.querySelector("#result").textContent = "You Lose!"
+ }
 };
 
 const container = document.querySelector("#container");
