@@ -28,6 +28,7 @@ let computerScore = 0;
  } else {document.querySelector("#result").textContent = `You Lose! ${computerChoice} beats ${humanChoice}`;
     computerScore += 1;
  }
+ document.querySelector("#score").textContent = `Human Score : ${humanScore} VS Computer Score : ${computerScore}`
 };
 
 const container = document.querySelector("#container");
