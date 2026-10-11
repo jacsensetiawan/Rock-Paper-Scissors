@@ -15,17 +15,17 @@ let computerScore = 0;
  humanChoice=humanChoice.toLowerCase();
 
  if (humanChoice === computerChoice){
-    console.log ("You Draw! Both chose the same option");
+    document.querySelector("#result").textContent = "You Draw! Both chose the same option";
  } else if (humanChoice === "rock" && computerChoice === "scissors"){
-    console.log ("You Win! Rock beats Scissors");
+    document.querySelector("#result").textContent ="You Win! Rock beats Scissors";
     humanScore += 1;
  } else if (humanChoice === "paper" && computerChoice === "rock"){
-    console.log ("You Win! Paper beats Rock");
+    document.querySelector("#result").textContent = "You Win! Paper beats Rock";
     humanScore += 1;
  } else if (humanChoice === "scissors" && computerChoice === "paper"){
-    console.log ("You Win! Scissors beats Paper");
+    document.querySelector("#result").textContent = "You Win! Scissors beats Paper";
     humanScore += 1;
- } else {console.log (`You Lose! ${computerChoice} beats ${humanChoice}`);
+ } else {document.querySelector("#result").textContent = `You Lose! ${computerChoice} beats ${humanChoice}`;
     computerScore += 1;
  }
 };
